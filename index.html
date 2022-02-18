@@ -117,13 +117,123 @@ Spring 2021, Computer Elective, Web Design, Curry Collage, Purnell Robinson">
                 background-color: #f2f2f2;
                 padding: 20px;
             }
-        </style>
+
+      * {
+        box-sizing: border-box
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      }
+      .mySlides {
+        display: none
+      }
+      img {
+        vertical-align: middle;
+      }
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/9 etc) */
+      .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+
+</style>
 </head>
 </html>
 
 <div class="topnav">
     <a href="#section1">Projects</a>
-    <a href="https://1drv.ms/b/s!AvwubtHbMYeMmn9Ygv9uiktlS52u" target="_blank" rel="noopener noreferrer">Resume</a>
+    <a href="file:///C:/Users/Ageth/Desktop/Course%20Papers%20to%20hold%20onto/Robinson%20Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
     <a href="mailto: PernellRobinson14@gmail.com">Contact Me</a>
 </div>
 
@@ -137,7 +247,7 @@ Spring 2021, Computer Elective, Web Design, Curry Collage, Purnell Robinson">
     <div class="header2 text-white text-center">
 
         <center>
-            <img src="p1p.webp" alt="Pernell" height="350px">
+            <img src="p1p.webp" alt="Pernell" height="400px">
         </center>
         <h1>Pernell Robinson</h1>
 
@@ -172,7 +282,7 @@ Spring 2021, Computer Elective, Web Design, Curry Collage, Purnell Robinson">
             <div class="col-sm-4">
                 <h3>Internship</h3>
                 <p>
-                    I was trusted to help maintain the Curry College infrastructure through the Cherwell ticket system. My work would range from standard password resets to drive cloning loaner laptops for both students and faculty. Eventually I was allowed to aid in on site repairs.
+                    I was trusted to help maintain the Curry College infrastructure through the Cherwell ticket system. My work would range from standard password resets to drive cloning loaner laptops for both students and faculity. Eventually I was allowed to aid in on site repairs.
                 </p>
 
                 <p>
@@ -201,198 +311,113 @@ Spring 2021, Computer Elective, Web Design, Curry Collage, Purnell Robinson">
     </div>
 
     <div class="main" id="section1">
- 
-<center><h4 style=" font-size: 35px; padding: 80px 50px 15px 50px">Projects</h4></center>
+
+        <center><h4 style=" font-size: 35px; padding: 80px 50px 15px 50px">Projects</h4></center>
 </body>
 
-<!-- Carousel wrapper -->
-<div id="carouselMultiItemExample"
-     class="carousel slide carousel-dark text-center"
-     data-mdb-ride="carousel">
-    <!-- Controls -->
-    <div class="d-flex justify-content-center mb-4">
-        <button class="carousel-control-prev position-relative"
-                type="button"
-                data-mdb-target="#carouselMultiItemExample"
-                data-mdb-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next position-relative"
-                type="button"
-                data-mdb-target="#carouselMultiItemExample"
-                data-mdb-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 9</div>
+            <a href="https://1drv.ms/b/s!AvwubtHbMYeMmmONrI5ETpYa3QHt" target="_blank" rel="noopener noreferrer">
+                <img src="AI Presentation Picture.webp" style="width:100%">
+            </a>
+            <div class="text">
+                AI Presentation - Presentation involving the overview of AI and its potential applications.</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 9</div>
+            <img src="IoT Devices Presentation.webp" style="width:100%">
+            <div class="text">Sunset in Romania</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 9</div>
+            <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" style="width:100%">
+            <div class="text">New York, USA</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 9</div>
+            <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" style="width:100%">
+            <div class="text">New York, USA</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 9</div>
+            <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" style="width:100%">
+            <div class="text">New York, USA</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 9</div>
+            <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" style="width:100%">
+            <div class="text">New York, USA</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">7 / 9</div>
+            <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" style="width:100%">
+            <div class="text">New York, USA</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">8 / 9</div>
+            <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" style="width:100%">
+            <div class="text">New York, USA</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">9 / 9</div>
+            <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" style="width:100%">
+            <div class="text">New York, USA</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <!-- Inner -->
-    <div class="carousel-inner py-4">
-        <!-- Single item -->
-        <div class="carousel-item active">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <img src="AI Presentation Picture.webp"
-                                 class="card-img-top"
-                                 alt="AI"/>
-                            <div class="card-body">
-                                <h5 class="card-title">Artificial Intelligence</h5>
-                                <p class="card-text">
-                                    Presentation involving the overview of AI and its potential applications.
-                                </p>
-                                <a href="https://1drv.ms/b/s!AvwubtHbMYeMmmONrI5ETpYa3QHt"target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="card">
-                            <img src="IoT Devices Presentation.webp"
-                                 class="card-img-top"
-                                 alt="IoT Devices"/>
-                            <div class="card-body">
-                                <h5 class="card-title">Cybersecuirty and IoT</h5>
-                                <p class="card-text">
-                                    Presentation of cybersecurity functionality and Internet of Things devices.
-                                </p>
-                                <a href="https://1drv.ms/b/s!AvwubtHbMYeMmmbsz1g8D97JhR1R" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="card">
-                            <img src="Online Game Exploitation.webp"
-                                 class="card-img-top"
-                                 alt="Network Security"/>
-                            <div class="card-body">
-                                <h5 class="card-title">Online Game Exploitation</h5>
-                                <p class="card-text">
-                                    Presentation of exploitations and security risks as seen through network security of MMOs
-                                </p>
-                                <a href="https://1drv.ms/b/s!AvwubtHbMYeMmmdn8xAkLwM98kuZ" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Single item -->
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-                                 class="card-img-top"
-                                 alt="Fissure in Sandstone" />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="card">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
-                                 class="card-img-top"
-                                 alt="Storm Clouds"/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <div class="card">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
-                                 class="card-img-top"
-                                 alt="Hot Air Balloons" />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Single item -->
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <div class="card">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
-                                 class="card-img-top"
-                                 alt="Peaks Against the Starry Sky" />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-                        <div class="card">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
-                                 class="card-img-top"
-                                 alt="Bridge Over Water" />
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-                        <div class="card">
-                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
-                                 class="card-img-top"
-                                 alt="Purbeck Heritage Coast" />
-                            <div class="card-body">
-                                <h5 class="card-title">Card Title</h5>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk
-                                    of the card's content.
-                                </p>
-                                <a href="#!" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
     </div>
-    <!-- Inner -->
-</div>
-<!-- Carousel wrapper -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
 <footer>
     Created by Pernell Robinson
     <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
